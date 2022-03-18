@@ -6,9 +6,9 @@ drawRectangle();
 
 function loadCanvas(id) {
     
-    var div = document.createElement('div');
-    div.id= "myDiv";
-    document.body.appendChild(div); 
+    //var div = document.createElement('div');
+    //div.id= "myDiv";
+    //document.body.appendChild(div); 
     var canvas = document.createElement('canvas');
     canvas.id     = "myCanvas";
     canvas.width  = 1224;
@@ -16,7 +16,7 @@ function loadCanvas(id) {
     canvas.style.zIndex   = 8;
     canvas.style.position = "absolute";
     canvas.style.border   = "1px solid";
-    div.appendChild(canvas)
+    document.body.appendChild(canvas);
 }
 
 function drawRectangle(){
